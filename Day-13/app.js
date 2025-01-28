@@ -7,5 +7,5 @@ let bgcolorelements=document.querySelectorAll('.bgcolor');
     })
     element.addEventListener("mouseout",()=>{
         element.style.backgroundColor="white";
-    })
+    })
 })
