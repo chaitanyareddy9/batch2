@@ -117,22 +117,54 @@
 // export default App
 
 
-import React from 'react'
-import Form from './components/Form'
+// import React from 'react'
+// import Form from './components/Form'
 // import CBCStateEg from './stateexamples/CBCStateEg'
 // import FBCStateEg from './stateexamples/FBCStateEg'
 // import FunctionalComp from './components/FunctionalComp'
 // import ClassComponent from './components/ClassComponent'
 
 
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateEg/> */}
+//       {/* <FBCStateEg/> */}
+//       {/* <FunctionalComp clgname='MRU' location='HYD' apply={true} /> */}
+//       {/* <ClassComponent/> */}
+//       {/* <Form/> */}
+//     </div>
+//     )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import UseEffectEx from './HooksExamples/UseEffectEx'
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <UseEffectEx/>
+//     </div>
+//     )
+// }
+
+// export default App
+
+
+import React from 'react'
+import RefExample from './HooksExamples/RefExample'
+
+
+
 const App = () => {
   return (
     <div>
-      {/* <CBCStateEg/> */}
-      {/* <FBCStateEg/> */}
-      {/* <FunctionalComp clgname='MRU' location='HYD' apply={true} /> */}
-      {/* <ClassComponent/> */}
-      <Form/>
+      <RefExample/>
     </div>
     )
 }
