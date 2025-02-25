@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+  .parent {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 60% 20% 10%;
+    grid-template-areas: 
+      "header header header"
+      "nav article article"
+      "nav ads ads"
+      "footer footer footer";
+    grid-gap: 10px;
+  }
+  .header, .nav, .article, .ads, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    grid-area: header;
+    background-color: lightgray;
+  }
+  .nav {
+    grid-area: nav;
+    background-color: lightblue;
+  }
+  .article {
+    grid-area: article;
+    background-color: lightgreen;
+  }
+  .ads {
+    grid-area: ads;
+    background-color: lightpink;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: lightcoral;
+  }
+</style>
+</head>
+<body>
+<section class="parent">
+  <section class="header">Header</section>
+  <section class="nav">Nav</section>
+  <section class="article">Article</section>
+  <section class="ads">Ads</section>
+  <section class="footer">Footer</section>
+</section>
+</body>
+</html>

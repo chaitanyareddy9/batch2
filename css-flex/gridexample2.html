@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<style>
+  .parent {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-areas: 
+      "header header header"
+      "sidebar c1 c1"
+      "sidebar c2 c3"
+      "footer footer footer";
+    grid-gap: 10px;
+  }
+  .header, .sidebar, .c1, .c2, .c3, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }
+  .header {
+    grid-area: header;
+    background-color: blueviolet;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: aquamarine;
+  }
+  .c1 {
+    grid-area: c1;
+    background-color: blue;
+  }
+  .c2 {
+    grid-area: c2;
+    background-color: lightpink;
+    aspect-ratio: 1;
+  }
+  .c3 {
+    grid-area: c3;
+    background-color: lightyellow;
+    aspect-ratio: 1;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: lightcoral;
+  }
+</style>
+</head>
+<body>
+<section class="parent">
+  <section class="header">Header</section>
+  <section class="sidebar">Sidebar</section>
+  <section class="c1">Content-1</section>
+  <section class="c2">Content-2</section>
+  <section class="c3">Content-3</section>
+  <section class="footer">Footer</section>
+</section>
+</body>
+</html>
